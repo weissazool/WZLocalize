@@ -14,7 +14,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOw-UL-co0">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Text">
+                                <state key="normal" title="Button">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -24,7 +24,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k50-8c-Gku">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Images">
+                                <state key="normal" title="Button">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,7 +34,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hg-DM-Cuh">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Nibs">
+                                <state key="normal" title="Button">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -47,32 +47,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40J-DA-H3H">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="NSAttributedString">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="40J-DA-H3H" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8zg-Qs-Zqf"/>
                             <constraint firstAttribute="trailing" secondItem="k50-8c-Gku" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="MoI-Ov-3oI"/>
                             <constraint firstItem="k50-8c-Gku" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="P20-cF-1YQ"/>
                             <constraint firstAttribute="trailing" secondItem="FOw-UL-co0" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QH2-lX-gcB"/>
                             <constraint firstItem="4hg-DM-Cuh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="SWG-dB-Z4w"/>
-                            <constraint firstItem="40J-DA-H3H" firstAttribute="top" secondItem="4hg-DM-Cuh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Vj7-Dc-MJo"/>
                             <constraint firstItem="FOw-UL-co0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="WcY-ps-MKY"/>
                             <constraint firstItem="cnF-fu-5ag" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="d9k-UM-38F"/>
                             <constraint firstAttribute="trailing" secondItem="4hg-DM-Cuh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fpV-hC-egg"/>
                             <constraint firstItem="k50-8c-Gku" firstAttribute="top" secondItem="FOw-UL-co0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="nxs-U3-aX0"/>
                             <constraint firstItem="FOw-UL-co0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="132" id="pZ1-v8-lu2"/>
                             <constraint firstItem="cnF-fu-5ag" firstAttribute="centerX" secondItem="FOw-UL-co0" secondAttribute="centerX" type="default" id="pso-RY-5Ca"/>
-                            <constraint firstItem="40J-DA-H3H" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rIo-UA-FEK"/>
                             <constraint firstItem="4hg-DM-Cuh" firstAttribute="top" secondItem="k50-8c-Gku" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zvz-DR-RMq"/>
                         </constraints>
                     </view>
@@ -81,14 +68,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
