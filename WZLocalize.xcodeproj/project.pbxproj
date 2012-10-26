@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6634274C16367E110060B504 /* iphone4-background-weissazool.png in Resources */ = {isa = PBXBuildFile; fileRef = 6634274A16367E110060B504 /* iphone4-background-weissazool.png */; };
+		6634274D16367E110060B504 /* iphone5-background-weissazool.png in Resources */ = {isa = PBXBuildFile; fileRef = 6634274B16367E110060B504 /* iphone5-background-weissazool.png */; };
+		6634275E16367EF50060B504 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6634275D16367EF50060B504 /* Default@2x.png */; };
+		6634276016367EFB0060B504 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6634275F16367EFB0060B504 /* Default-568h@2x.png */; };
 		66895FF016315EDC0016E38C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66895FEF16315EDC0016E38C /* UIKit.framework */; };
 		66895FF216315EDC0016E38C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66895FF116315EDC0016E38C /* Foundation.framework */; };
 		66895FF416315EDC0016E38C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66895FF316315EDC0016E38C /* CoreGraphics.framework */; };
@@ -14,8 +18,6 @@
 		66895FFC16315EDC0016E38C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66895FFB16315EDC0016E38C /* main.m */; };
 		6689600016315EDC0016E38C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66895FFF16315EDC0016E38C /* AppDelegate.m */; };
 		6689600216315EDD0016E38C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6689600116315EDD0016E38C /* Default.png */; };
-		6689600416315EDD0016E38C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6689600316315EDD0016E38C /* Default@2x.png */; };
-		6689600616315EDD0016E38C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6689600516315EDD0016E38C /* Default-568h@2x.png */; };
 		6689600916315EDD0016E38C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6689600716315EDD0016E38C /* MainStoryboard.storyboard */; };
 		6689600C16315EDD0016E38C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689600B16315EDD0016E38C /* ViewController.m */; };
 		6689601416315EDD0016E38C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6689601316315EDD0016E38C /* SenTestingKit.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6634274A16367E110060B504 /* iphone4-background-weissazool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone4-background-weissazool.png"; sourceTree = "<group>"; };
+		6634274B16367E110060B504 /* iphone5-background-weissazool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone5-background-weissazool.png"; sourceTree = "<group>"; };
+		6634275D16367EF50060B504 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		6634275F16367EFB0060B504 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		66895FEB16315EDC0016E38C /* WZLocalize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZLocalize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66895FEF16315EDC0016E38C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		66895FF116315EDC0016E38C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,8 +53,6 @@
 		66895FFE16315EDC0016E38C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66895FFF16315EDC0016E38C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6689600116315EDD0016E38C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		6689600316315EDD0016E38C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		6689600516315EDD0016E38C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6689600816315EDD0016E38C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6689600A16315EDD0016E38C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6689600B16315EDD0016E38C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -140,9 +144,11 @@
 				66895FF816315EDC0016E38C /* InfoPlist.strings */,
 				66895FFB16315EDC0016E38C /* main.m */,
 				66895FFD16315EDC0016E38C /* WZLocalize-Prefix.pch */,
+				6634275F16367EFB0060B504 /* Default-568h@2x.png */,
+				6634275D16367EF50060B504 /* Default@2x.png */,
 				6689600116315EDD0016E38C /* Default.png */,
-				6689600316315EDD0016E38C /* Default@2x.png */,
-				6689600516315EDD0016E38C /* Default-568h@2x.png */,
+				6634274A16367E110060B504 /* iphone4-background-weissazool.png */,
+				6634274B16367E110060B504 /* iphone5-background-weissazool.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,9 +247,11 @@
 			files = (
 				66895FFA16315EDC0016E38C /* InfoPlist.strings in Resources */,
 				6689600216315EDD0016E38C /* Default.png in Resources */,
-				6689600416315EDD0016E38C /* Default@2x.png in Resources */,
-				6689600616315EDD0016E38C /* Default-568h@2x.png in Resources */,
 				6689600916315EDD0016E38C /* MainStoryboard.storyboard in Resources */,
+				6634274C16367E110060B504 /* iphone4-background-weissazool.png in Resources */,
+				6634274D16367E110060B504 /* iphone5-background-weissazool.png in Resources */,
+				6634275E16367EF50060B504 /* Default@2x.png in Resources */,
+				6634276016367EFB0060B504 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +469,7 @@
 				6689602616315EDD0016E38C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6689602716315EDD0016E38C /* Build configuration list for PBXNativeTarget "WZLocalizeTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +478,7 @@
 				6689602916315EDD0016E38C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

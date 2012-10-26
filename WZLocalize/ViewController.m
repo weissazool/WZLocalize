@@ -24,6 +24,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    // create a mango button to push for more mangoes.
+    // create a mango label describing how many mangoes one owns.
+    NSInteger mangoes = 0;
+    [NSString stringWithFormat:@"I have %d mangoes", mangoes];
 }
 
 @end
