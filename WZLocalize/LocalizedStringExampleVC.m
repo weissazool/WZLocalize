@@ -47,25 +47,38 @@
     UIButton *buttonAddPapayas;
     CGRect frameExampleTitle, frameTitle, frameLovePapayas, frameHotPapayas, frameAddPapayas;
     
+    frameExampleTitle = CGRectMake(X_AXIS_PADDING, 20, SUBVIEW_MAXWIDTH, 20);
+    frameTitle = CGRectMake(X_AXIS_PADDING, 60, SUBVIEW_MAXWIDTH, 20);
+    frameLovePapayas = CGRectMake(X_AXIS_PADDING, 120, SUBVIEW_MAXWIDTH, 20);
+    frameAddPapayas = CGRectMake(X_AXIS_PADDING, 160, SUBVIEW_MAXWIDTH, 20);
+    frameHotPapayas = CGRectMake(X_AXIS_PADDING, 220, SUBVIEW_MAXWIDTH, 20);
+    
     labelExampleTitle = [[UILabel alloc] initWithFrame:frameExampleTitle];
-    labelExampleTitle.text = NSLocalizedString(@"NSLocalizedString() example", @"Translate 'example' only");
-    [self.view addSubview:labelExampleTitle];
-    
     labelTitle = [[UILabel alloc] initWithFrame:frameTitle];
-    labelTitle.text = NSLocalizedString(@"Papayas", nil);
-    [self.view addSubview:labelTitle];
-    
     labelLovePapayas = [[UILabel alloc] initWithFrame:frameLovePapayas];
-    labelLovePapayas.text = NSLocalizedString(@"I love papayas! Would you like some?", @"Offering the user papayas");
-    [self.view addSubview:labelLovePapayas];
-    
-    labelHotPapayas = [[UILabel alloc] initWithFrame:frameHotPapayas];
-    labelHotPapayas.text = NSLocalizedString(@"You have no papayas. How sad.", @"Expressing sympathy for the user");
-    [self.view addSubview:labelHotPapayas];
-    
     buttonAddPapayas = [[UIButton alloc] initWithFrame:frameAddPapayas];
+    labelHotPapayas = [[UILabel alloc] initWithFrame:frameHotPapayas];
+    
+    labelExampleTitle.backgroundColor = [UIColor clearColor];
+    labelTitle.backgroundColor = [UIColor clearColor];
+    labelLovePapayas.backgroundColor = [UIColor clearColor];
+    labelHotPapayas.backgroundColor = [UIColor clearColor];
+    
+    
+    
+    labelExampleTitle.text = NSLocalizedString(@"NSLocalizedString() example", @"Translate 'example' only");
+    labelTitle.text = NSLocalizedString(@"Papayas", nil);
+    labelLovePapayas.text = NSLocalizedString(@"I love papayas! Would you like some?", @"Offering the user papayas");
     buttonAddPapayas.titleLabel.text = NSLocalizedString(@"Gimme a papaya!", @"User demands a papaya");
+    labelHotPapayas.text = NSLocalizedString(@"You have no papayas. How sad.", @"Expressing sympathy for the user");
+
+   
+    [self.view addSubview:labelExampleTitle];
+    [self.view addSubview:labelTitle];
+    [self.view addSubview:labelLovePapayas];
     [self.view addSubview:buttonAddPapayas];
+    [self.view addSubview:labelHotPapayas];
+
     
 //    self.labelExampleTitle.text = NSLocalizedString(@"NSLocalizedString() example", @"Translate 'example' only");
 //    self.labelTitle.text = NSLocalizedString(@"Papayas", nil);
