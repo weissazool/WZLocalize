@@ -12,75 +12,56 @@
 #define SUBVIEW_MAXWIDTH            320.0 - X_AXIS_PADDING * 2
 
 @interface LocalizedStringExampleVC ()
-
+{
+    int papayas;
+}
 @end
 
 @implementation LocalizedStringExampleVC
 
-
-- (CGSize)sizeForText:(NSString *)text {
-//    NSLog(@"%@", text);
-    CGSize constraintSize = CGSizeMake(SUBVIEW_MAXWIDTH, MAXFLOAT);
+- (void)buttonBack:(id)sender {
     
-    CGSize textViewSize = [text sizeWithFont:
-                           [UIFont fontWithName:@"Helvetica" size:15.0]
-                           constrainedToSize:constraintSize
-                               lineBreakMode:NSLineBreakByTruncatingTail];
-//    NSLog(@"%f, %f", textViewSize.width, textViewSize.height);
-
-    return textViewSize;
-}
-
-- (CGRect)frameForPapayaButtonText:(NSString *)text {
-    CGSize labelSize = [self sizeForText:text];
-    CGFloat originX = X_AXIS_PADDING + SUBVIEW_MAXWIDTH - labelSize.width;
-    CGPoint origin = CGPointMake(originX, self.buttonAddPapayas.frame.origin.y);
-    CGRect frame = CGRectMake(origin.x, origin.y, labelSize.width, labelSize.height);
-    NSLog(@"%f, %f, %f, %f", frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
-    return frame;
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
-- (void)layout {
+- (NSString *)papayas {
     
-    UILabel *labelExampleTitle, *labelTitle, *labelLovePapayas, *labelHotPapayas;
-    UIButton *buttonAddPapayas;
-    CGRect frameExampleTitle, frameTitle, frameLovePapayas, frameHotPapayas, frameAddPapayas;
+    NSString *papayaPlurality;
+    NSString *additionalComment = @"";
     
-    labelExampleTitle = [[UILabel alloc] initWithFrame:frameExampleTitle];
-    labelExampleTitle.text = NSLocalizedString(@"NSLocalizedString() example", @"Translate 'example' only");
-    [self.view addSubview:labelExampleTitle];
     
-    labelTitle = [[UILabel alloc] initWithFrame:frameTitle];
-    labelTitle.text = NSLocalizedString(@"Papayas", nil);
-    [self.view addSubview:labelTitle];
+    if (papayas == 0) {
+        papayaPlurality = NSLocalizedString(@"NoPapayas", @"No papayas.");
+        additionalComment = NSLocalizedString(@"How sad.", @"Regretfulness");
+    } else if (papayas == 1) {
+        papayaPlurality = NSLocalizedString(@"SingularPapaya", @"One papaya");
+    } else {
+        papayaPlurality = NSLocalizedString(@"PluralPapayas", @"No or multiple papayas.");
+        if (papayas >= 5) {
+            additionalComment = NSLocalizedString(@"You are very fortunate!", @"Joy");
+        }
+    }
+
+    return [NSString stringWithFormat:NSLocalizedString(@"You have %d %@. %@", @"Papaya possession"), papayas, papayaPlurality, additionalComment];
+
+}
+
+- (void)buttonAddPapayas:(id)sender {
+    papayas++;
+    self.labelHotPapayas.text = [self papayas];
     
-    labelLovePapayas = [[UILabel alloc] initWithFrame:frameLovePapayas];
-    labelLovePapayas.text = NSLocalizedString(@"I love papayas! Would you like some?", @"Offering the user papayas");
-    [self.view addSubview:labelLovePapayas];
+}
+
+- (void)setText {
     
-    labelHotPapayas = [[UILabel alloc] initWithFrame:frameHotPapayas];
-    labelHotPapayas.text = NSLocalizedString(@"You have no papayas. How sad.", @"Expressing sympathy for the user");
-    [self.view addSubview:labelHotPapayas];
-    
-    buttonAddPapayas = [[UIButton alloc] initWithFrame:frameAddPapayas];
-    buttonAddPapayas.titleLabel.text = NSLocalizedString(@"Gimme a papaya!", @"User demands a papaya");
-    [self.view addSubview:buttonAddPapayas];
-    
-//    self.labelExampleTitle.text = NSLocalizedString(@"NSLocalizedString() example", @"Translate 'example' only");
-//    self.labelTitle.text = NSLocalizedString(@"Papayas", nil);
-//    self.labelLovePapayas.text = NSLocalizedString(@"I love papayas! Would you like some?", @"Offering the user papayas");
-//    self.labelHotPapayas.text = NSLocalizedString(@"You have no papayas. How sad.", @"Expressing sympathy for the user");
-//    NSString *buttonText = NSLocalizedString(@"Gimme a papaya!", @"User demands a papaya");
-//    [self.buttonAddPapayas setFrame:[self frameForPapayaButtonText:buttonText]];
-//    self.buttonAddPapayas.titleLabel.text = buttonText;
-//    [self.buttonAddPapayas sizeThatFits:[self sizeForText:self.buttonAddPapayas.titleLabel.text]];
-//    [self.labelExampleTitle sizeToFit];
-//    [self.labelTitle sizeToFit];
-//    [self.labelLovePapayas sizeToFit];
-//    [self.labelHotPapayas sizeToFit];
-//    [self.buttonAddPapayas sizeToFit];
-    
+    self.labelExampleTitle.text = NSLocalizedString(@"NSLocalizedString() example", @"Translate 'example' only");
+    self.labelTitle.text = NSLocalizedString(@"Papayas", nil);
+    self.labelLovePapayas.text = NSLocalizedString(@"I love papayas! Would you like some?", @"Offering the user papayas");
+    self.labelHotPapayas.text = [self papayas];
+    //NSLocalizedString(@"You have no papayas. How sad.", @"Expressing sympathy for the user");
+    [self.buttonAddPapayas setTitle:NSLocalizedString(@"Gimme a papaya!", @"User demands a papaya")
+                           forState:UIControlStateNormal];
 }
 
 
@@ -101,7 +82,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [self layout];
+    papayas = 0;
+    [self setText];
 }
 
 - (void)didReceiveMemoryWarning
