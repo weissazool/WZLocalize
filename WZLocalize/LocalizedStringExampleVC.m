@@ -37,7 +37,7 @@
     } else if (papayas == 1) {
         papayaPlurality = NSLocalizedString(@"SingularPapaya", @"One papaya");
     } else {
-        papayaPlurality = NSLocalizedString(@"PluralPapayas", @"No or multiple papayas.");
+        papayaPlurality = NSLocalizedString(@"PluralPapayas", @"Multiple papayas.");
         if (papayas >= 5) {
             additionalComment = NSLocalizedString(@"You are very fortunate!", @"Joy");
         }
@@ -54,9 +54,9 @@
 }
 
 - (void)setText {
-    
+    NSString *newString = NSLocalizedString(@"NewString", @"testing genstrings");
     self.labelExampleTitle.text = NSLocalizedString(@"NSLocalizedString() example", @"Translate 'example' only");
-    self.labelTitle.text = NSLocalizedString(@"Papayas", nil);
+    self.labelTitle.text = NSLocalizedString(@"PluralPapayas", nil);
     self.labelLovePapayas.text = NSLocalizedString(@"I love papayas! Would you like some?", @"Offering the user papayas");
     self.labelHotPapayas.text = [self papayas];
     //NSLocalizedString(@"You have no papayas. How sad.", @"Expressing sympathy for the user");
