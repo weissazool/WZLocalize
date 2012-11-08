@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660DA6EA164A809000362651 /* aybabtu.png in Resources */ = {isa = PBXBuildFile; fileRef = 660DA6E9164A809000362651 /* aybabtu.png */; };
 		6634274C16367E110060B504 /* iphone4-background-weissazool.png in Resources */ = {isa = PBXBuildFile; fileRef = 6634274A16367E110060B504 /* iphone4-background-weissazool.png */; };
 		6634274D16367E110060B504 /* iphone5-background-weissazool.png in Resources */ = {isa = PBXBuildFile; fileRef = 6634274B16367E110060B504 /* iphone5-background-weissazool.png */; };
 		6634275E16367EF50060B504 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6634275D16367EF50060B504 /* Default@2x.png */; };
@@ -27,6 +28,7 @@
 		6689602116315EDD0016E38C /* WZLocalizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6689602016315EDD0016E38C /* WZLocalizeTests.m */; };
 		66A36818163B9C48000E9AC7 /* LocalizedStringExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A36817163B9C48000E9AC7 /* LocalizedStringExampleVC.m */; };
 		66B084641641F87600E1492D /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B084631641F87600E1492D /* TestVC.m */; };
+		66FD6329164BE8D600C73BD1 /* distinguishedgentleman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66FD6328164BE8D600C73BD1 /* distinguishedgentleman.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		660DA6E9164A809000362651 /* aybabtu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aybabtu.png; sourceTree = "<group>"; };
 		6634274A16367E110060B504 /* iphone4-background-weissazool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone4-background-weissazool.png"; sourceTree = "<group>"; };
 		6634274B16367E110060B504 /* iphone5-background-weissazool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone5-background-weissazool.png"; sourceTree = "<group>"; };
 		6634275D16367EF50060B504 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
@@ -68,6 +71,12 @@
 		66A36817163B9C48000E9AC7 /* LocalizedStringExampleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizedStringExampleVC.m; sourceTree = "<group>"; };
 		66B084621641F87600E1492D /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestVC.h; path = Classes/TestVC.h; sourceTree = "<group>"; };
 		66B084631641F87600E1492D /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestVC.m; path = Classes/TestVC.m; sourceTree = "<group>"; };
+		66FD6328164BE8D600C73BD1 /* distinguishedgentleman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = distinguishedgentleman.jpg; sourceTree = "<group>"; };
+		66FD632B164BEF5C00C73BD1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		66FD632C164BEF5C00C73BD1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66FD632D164BEF5C00C73BD1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66FD632E164BEF8000C73BD1 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		66FD632F164BEF8000C73BD1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660DA6081649349100362651 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				660DA6E9164A809000362651 /* aybabtu.png */,
+				66FD6328164BE8D600C73BD1 /* distinguishedgentleman.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		66895FE016315EDC0016E38C = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +145,7 @@
 		66895FF516315EDC0016E38C /* WZLocalize */ = {
 			isa = PBXGroup;
 			children = (
+				660DA6081649349100362651 /* Images */,
 				66895FFE16315EDC0016E38C /* AppDelegate.h */,
 				66895FFF16315EDC0016E38C /* AppDelegate.m */,
 				6689600716315EDD0016E38C /* MainStoryboard.storyboard */,
@@ -256,6 +275,8 @@
 				6634274D16367E110060B504 /* iphone5-background-weissazool.png in Resources */,
 				6634275E16367EF50060B504 /* Default@2x.png in Resources */,
 				6634276016367EFB0060B504 /* Default-568h@2x.png in Resources */,
+				660DA6EA164A809000362651 /* aybabtu.png in Resources */,
+				66FD6329164BE8D600C73BD1 /* distinguishedgentleman.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +342,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				66895FF916315EDC0016E38C /* en */,
+				66FD632C164BEF5C00C73BD1 /* ja */,
+				66FD632F164BEF8000C73BD1 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -329,6 +352,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				6689600816315EDD0016E38C /* en */,
+				66FD632B164BEF5C00C73BD1 /* ja */,
+				66FD632E164BEF8000C73BD1 /* es */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -337,6 +362,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6689601D16315EDD0016E38C /* en */,
+				66FD632D164BEF5C00C73BD1 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

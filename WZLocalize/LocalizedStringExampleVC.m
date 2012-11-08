@@ -1,11 +1,16 @@
 //
-//  NSLocalizedStringExampleVC.m
+//  NS Localized String ExampleVC.m - this line w/o spaces makes genstrings angry!
 //  WZLocalize
 //
 //  Created by Anthony Weiss on 10/27/12.
 //  Copyright (c) 2012 Anthony Weiss. All rights reserved.
 //
 
+
+
+
+
+#import "ViewController.h"
 #import "LocalizedStringExampleVC.h"
 
 #define X_AXIS_PADDING              20.0
@@ -50,16 +55,13 @@
 - (void)buttonAddPapayas:(id)sender {
     papayas++;
     self.labelHotPapayas.text = [self papayas];
-    
 }
 
 - (void)setText {
-    NSString *newString = NSLocalizedString(@"NewString", @"testing genstrings");
-    self.labelExampleTitle.text = NSLocalizedString(@"NSLocalizedString() example", @"Translate 'example' only");
+    self.labelExampleTitle.text = NSLocalizedString(@"LocalizedString() example", @"Translate 'example' only");
     self.labelTitle.text = NSLocalizedString(@"PluralPapayas", nil);
     self.labelLovePapayas.text = NSLocalizedString(@"I love papayas! Would you like some?", @"Offering the user papayas");
     self.labelHotPapayas.text = [self papayas];
-    //NSLocalizedString(@"You have no papayas. How sad.", @"Expressing sympathy for the user");
     [self.buttonAddPapayas setTitle:NSLocalizedString(@"Gimme a papaya!", @"User demands a papaya")
                            forState:UIControlStateNormal];
 }
