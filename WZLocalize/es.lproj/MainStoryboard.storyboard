@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Basic View Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="BasicViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -102,15 +102,15 @@
             </objects>
             <point key="canvasLocation" x="-486" y="-571"/>
         </scene>
-        <!--View Controller-->
+        <!--Basic View Controller-->
         <scene sceneID="gmn-y3-l2F">
             <objects>
-                <viewController id="AGf-Q2-R2s" sceneMemberID="viewController">
+                <viewController id="AGf-Q2-R2s" customClass="BasicViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fEl-ae-8wN">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-qX-5hK"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-qX-5hK"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGZ-i5-wtR">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="Ix6-BI-oL8"/>
@@ -124,6 +124,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonBack:" destination="AGf-Q2-R2s" eventType="touchUpInside" id="VMU-xd-yYU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="images" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO6-ZF-sAG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -156,15 +159,15 @@
             </objects>
             <point key="canvasLocation" x="-455" y="278"/>
         </scene>
-        <!--View Controller-->
+        <!--Basic View Controller-->
         <scene sceneID="Nx8-cJ-YwY">
             <objects>
-                <viewController id="VDJ-wS-Qfm" sceneMemberID="viewController">
+                <viewController id="VDJ-wS-Qfm" customClass="BasicViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wOa-yH-jJg">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="UAp-7W-Y4I"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="UAp-7W-Y4I"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPh-DI-Y8c">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="41p-zT-eBZ"/>
@@ -178,6 +181,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonBack:" destination="VDJ-wS-Qfm" eventType="touchUpInside" id="ner-KB-zDH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ibtool" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2N-iO-Tkn">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -221,6 +227,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonBack:" destination="VDJ-wS-Qfm" eventType="touchUpInside" id="gXY-d8-A32"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press if you agree!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHH-GZ-HHx">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -292,15 +301,15 @@
             </objects>
             <point key="canvasLocation" x="-49" y="278"/>
         </scene>
-        <!--View Controller-->
+        <!--Basic View Controller-->
         <scene sceneID="4Zm-wA-sBq">
             <objects>
-                <viewController id="57H-qY-g60" sceneMemberID="viewController">
+                <viewController id="57H-qY-g60" customClass="BasicViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ojM-0Q-lxJ">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-9z-MJG"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-9z-MJG"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnO-cH-dos">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="L2X-Cc-toO"/>
@@ -314,6 +323,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonBack:" destination="57H-qY-g60" eventType="touchUpInside" id="HtG-UD-xb3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NSAttributedString" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtM-5C-68H">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -357,7 +369,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="s2U-k4-HEX"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="s2U-k4-HEX"/>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBz-ku-0C9">
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" type="user" id="hzc-6B-FxO"/>
@@ -462,6 +474,7 @@
     <resources>
         <image name="Default-568h@2x.png" width="640" height="1136"/>
         <image name="aybabtu.png" width="608" height="476"/>
+        <image name="background-568h@2x.png" width="640" height="1136"/>
         <image name="distinguishedgentleman.jpg" width="427" height="640"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

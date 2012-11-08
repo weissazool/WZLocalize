@@ -10,7 +10,7 @@
 
 
 
-#import "ViewController.h"
+#import "BasicViewController.h"
 #import "LocalizedStringExampleVC.h"
 
 #define X_AXIS_PADDING              20.0

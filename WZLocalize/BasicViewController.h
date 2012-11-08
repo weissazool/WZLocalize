@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BasicViewController.h
 //  WZLocalize
 //
 //  Created by Anthony Weiss on 10/19/12.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface BasicViewController : UIViewController
+
+- (IBAction)buttonBack:(id)sender;
 
 @end
