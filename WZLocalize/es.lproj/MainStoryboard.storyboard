@@ -15,7 +15,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default-568h@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-Fu-hYg"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOw-UL-co0">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Text">
+                                <state key="normal" title="Texto">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,7 +28,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k50-8c-Gku">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Images">
+                                <state key="normal" title="Imágenes">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,7 +52,7 @@
                                     <segue destination="VDJ-wS-Qfm" kind="modal" modalTransitionStyle="flipHorizontal" id="piy-6c-AEr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Localization Topics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-fu-5ag">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Temas de Localización" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-fu-5ag">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="TSv-Db-lKC"/>
                                 </constraints>
@@ -128,7 +128,7 @@
                                     <action selector="buttonBack:" destination="AGf-Q2-R2s" eventType="touchUpInside" id="cro-pZ-MAa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="images" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO6-ZF-sAG">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="imágenes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO6-ZF-sAG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -190,14 +190,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This text has been laid out in the nib." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZM-yV-HpI">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ese texto fue arreglado en el nib." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZM-yV-HpI">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Just the way I like it!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxg-9T-bKW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Exacto como me gusta!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="142" translatesAutoresizingMaskIntoConstraints="NO" id="Oxg-9T-bKW">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="nA6-yc-hYw"/>
+                                    <constraint firstAttribute="height" constant="39" id="z8I-Rc-nNS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <color key="textColor" red="0.094117656350135803" green="0.16078431904315948" blue="0.60000002384185791" alpha="1" colorSpace="deviceRGB"/>
@@ -209,7 +209,7 @@
                                     <constraint firstAttribute="height" constant="195" id="mKK-GH-WFB"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="&quot;I prefer to visualize my app as completely as possible in UIStoryboard.&quot;" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="138" translatesAutoresizingMaskIntoConstraints="NO" id="2FN-za-Hk2">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="&quot;Prefiero visualizar mi aplicativo en UIStoryboard.&quot;" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="138" translatesAutoresizingMaskIntoConstraints="NO" id="2FN-za-Hk2">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="JtI-Fj-GYV"/>
                                     <constraint firstAttribute="height" constant="87" id="oJ1-pA-UKi"/>
@@ -220,7 +220,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsl-5I-ITC">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="The Agreeable Button">
+                                <state key="normal" title="El Botón De Acuerdo">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -231,12 +231,12 @@
                                     <action selector="buttonBack:" destination="VDJ-wS-Qfm" eventType="touchUpInside" id="csW-89-I33"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press if you agree!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHH-GZ-HHx">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Presiona si está de acuerdo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHH-GZ-HHx">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="- distinguished gentleman" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="115" translatesAutoresizingMaskIntoConstraints="NO" id="20o-Zd-zIM">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="- distinguido señor" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="115" translatesAutoresizingMaskIntoConstraints="NO" id="20o-Zd-zIM">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="8H3-pj-ct2"/>
                                     <constraint firstAttribute="width" constant="115" id="V9d-lo-9zu"/>
@@ -262,6 +262,7 @@
                             <constraint firstItem="UAp-7W-Y4I" firstAttribute="trailing" secondItem="wOa-yH-jJg" secondAttribute="trailing" type="default" id="7Ll-j4-Hs0"/>
                             <constraint firstItem="gbX-PE-LrO" firstAttribute="top" secondItem="VOz-Vb-4bs" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7hf-T8-b3F"/>
                             <constraint firstItem="UAp-7W-Y4I" firstAttribute="bottom" secondItem="wOa-yH-jJg" secondAttribute="bottom" type="default" id="Cru-aL-3FP"/>
+                            <constraint firstItem="2FN-za-Hk2" firstAttribute="top" secondItem="wOa-yH-jJg" secondAttribute="top" constant="166" id="DHO-vW-r09"/>
                             <constraint firstAttribute="trailing" secondItem="2FN-za-Hk2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ECO-vS-9TT"/>
                             <constraint firstAttribute="trailing" secondItem="3ZM-yV-HpI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="GzD-H4-aXM"/>
                             <constraint firstItem="20o-Zd-zIM" firstAttribute="top" secondItem="wOa-yH-jJg" secondAttribute="top" constant="247" id="K1X-Sh-3bM"/>
@@ -279,7 +280,6 @@
                             <constraint firstItem="g2N-iO-Tkn" firstAttribute="top" secondItem="wOa-yH-jJg" secondAttribute="top" constant="20" symbolic="YES" type="default" id="qTX-uI-CXm"/>
                             <constraint firstItem="UAp-7W-Y4I" firstAttribute="top" secondItem="wOa-yH-jJg" secondAttribute="top" type="default" id="r7w-VB-g5D"/>
                             <constraint firstItem="g2N-iO-Tkn" firstAttribute="centerX" secondItem="3ZM-yV-HpI" secondAttribute="centerX" type="default" id="uHL-dg-2it"/>
-                            <constraint firstItem="2FN-za-Hk2" firstAttribute="top" secondItem="wOa-yH-jJg" secondAttribute="top" constant="166" id="ueq-pY-1kb"/>
                             <constraint firstItem="gbX-PE-LrO" firstAttribute="leading" secondItem="wOa-yH-jJg" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vyI-50-UZN"/>
                             <constraint firstItem="VOz-Vb-4bs" firstAttribute="trailing" secondItem="gbX-PE-LrO" secondAttribute="trailing" type="default" id="xxw-Xc-ghz"/>
                             <constraint firstItem="fPh-DI-Y8c" firstAttribute="trailing" secondItem="wOa-yH-jJg" secondAttribute="trailing" type="default" id="zyJ-Vh-lhh"/>
